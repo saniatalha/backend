@@ -49,16 +49,6 @@ update(data) {
         throw "Fruit not found"
     }
 }
-destroyFruit(data) {
-    const deleteFruit = fruits.find(fruit => fruit.name.toLowerCase() === this.toLowerCase());
-    if (deleteFruit) {
-        const index = fruits.indexOf(deleteFruit);
-        console.log(index)
-    }else {
-        throw "Fruit not found"
-    }
-}
-
 }
 
 module.exports =FruitModel
